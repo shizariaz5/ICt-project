@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: #140450;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            position: fix;
+            border-radius: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Logo styling */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: white;
+            font-weight: bold;
+        }
+     /* Horizontal picture styling */
+        .horizontal-picture {
+            text-align: center;
+            z-index:1;
+        }
+
+        .horizontal-picture img {
+            width: 100%;
+            position: fix;
+            padding-top: 50px;
+        }
+        
+
+        /* Main content styling */
+        .main-content {
+            padding: 20px;
+            margin-top: 20px; 
+        }
+
+        .centered-paragraph {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .centered-paragraph h2 {
+            font-weight: bold;
+            font-size: 28px;
+        } 
+
+        /* Search bar styling */
+        .search-container {
+            display: flex;
+            margin-top: 2px;
+            height: 100%;
+        }
+
+        .search-box {
+            width: 200px;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            background-color: white;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 50px;
+            margin-top: 2px;
+            background-color: #555;
+            color: white;
+            max-width: 100px;
+        }
+        /* Button styling */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #08023c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Centered content styling */
+        .centered-content {
+            text-align: center;
+            margin: 10px auto; 
+            max-width: 800px;
+        }
+
+        .centered-content h3 {
+            font-weight: bold;
+            color:#070707;;
+            font-size: 28px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+
+        .main-content{
+            background-color: #dddddd;
+        }
+
+        .centered-content p {
+            color: #0a0a0a; 
+        }
+        /* Box container styling */
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px; 
+        }
+
+        /* Individual box styling */
+        .box {
+            text-align: center;
+            max-width: 400px; 
+        }
+
+        .box img {
+            width: 400px;
+            height: auto;
+        }
+
+        .box p {
+            width: 400px;
+            margin-top: 10px; 
+            color: #555;
+        }
+
+        a:hover {
+        color: blue;
+        }
+        
+        .center-box {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 40px; 
+            border-radius: 8px; 
+            text-align: center;
+        }
+        .center-content {
+            text-align: center;
+            background-color: #dddddd;
+        }
+        h1 {
+            padding-top: 20px;
+            color: #131313;
+        }
+        p {
+            padding-bottom: 20px;
+            color: #030303;
+            margin-top: 10px;
+        }
+        horizontal-picture {
+            text-align: center;
+            margin-top: 20px; 
+        }
+
+        .horizontal-picture1 img {
+            width: 500px;
+            max-width: 400px; 
+            height: auto;
+            margin-top: 10px; 
+        }
+        fixed-photo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .fixed-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        .button-container2 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .admissions-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #08023c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #140450;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        .footer-line {
+            height: 1px;
+            background-color: white;
+            margin: 10px 0;
+        }
+
+        /* Contact section styling */
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+
+<!-- Navigation bar HTML structure -->
+<nav>
+    <!-- Logo container with logo and text on the left -->
+    <div class="logo-container">
+        <img src="logo3.png" style="height: 50px; width: 50px;" >
+        <span class="logo-text">Air University</span>
+    </div>
+
+    <!-- Navigation links in the middle (you can adjust their order as needed) -->
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#Admissions">Admissions</a>
+    <a href="#Facilities">Facilities</a>
+    <a href="#contact us">Contact us</a>
+    <!-- Search bar container on the right -->
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-box">
+        <button type="submit" class="search-button">Search</button>
+    </div>
+</nav>
+
+<!-- Horizontal picture section -->
+<div class="horizontal-picture">
+    <img src="https://www.au.edu.pk/pages/About/About_Images/visitau.jpg" alt="Horizontal Picture">
+</div>
+
+<!-- Main content -->
+<div class="main-content">
+    <div class="centered-paragraph">
+        <h2>A Societal Mission</h2>
+        <p>
+            Air University was founded 21 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students.
+            For lives of leadership and contribution with integrity; advancing fundamental knowledge.
+            Cultivating creativity; leading in pioneering research for effective clinical therapies; and accelerating solutions.
+        </p>
+<!-- Button container and styling -->
+<div class="button-container">
+    <a href="#about" class="about-button">More about Air University</a>
+</div>
+    </div>
+</div>
+<div class="centered-content">
+    <h3>Academics</h3>
+    <p>Preparing students to make meanigful contributions to society as
+         engaged citizens and leaders in complex world. Redefining boundaries and setting new standards and innovating new techniques.</p>
+</div>
+<!-- Box container -->
+<div class="box-container">
+    <!-- Box 1 -->
+    <div class="box">
+        <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/8.jpg" alt="Image 1">
+        <a>Undergraduate Education</a>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box">
+        <img src="https://www.au.edu.pk/Pages/NewsEvents/EventGallary/127_7.jpg" alt="Image 2">
+        <a>Graduate Education</a>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box">
+        <img src="https://www.au.edu.pk/Pages/NewsEvents/EventGallary/110_1.jpg" alt="Image 3">
+        <a>Driving Impact</a>
+    </div>
+</div>
+<div class="center-content">
+    <h1>Upcoming events </h1>
+    <p>Building a vibrant community of creative and accomplished<br>
+   people from around the world. </p>
+   <!-- First horizontal picture with text below -->
+   <div class="horizontal-picture1">
+    <img src="https://www.au.edu.pk/Pages/NewsEvents/EventGallary/76_3.jpg" alt="First Image">
+        <p>Cultural Festival '24</p>
+    </div>
+
+    <div class="horizontal-picture1">
+        <img src="https://i.tribune.com.pk/media/images/aima1664866502-0/aima1664866502-0.jpg" alt="Second Image">
+        <p>Concert'24</p>
+    </div>
+    </div>
+     
+<!-- Content below the fixed photo -->
+<div class="center-box">
+    <h1>Spring 2024 Admissions</h1>
+    <p>Embark on your new journey with us starting today.
+    </p>
+    </div>
+    <!-- Fixed photo underneath the text -->
+<div class="fixed-photo">
+    <img src="https://pbs.twimg.com/media/GAumi9HXsAAxjsG?format=jpg&name=large" alt="Horizontal Photo">
+    <div class="button-container2">
+        <a href="#Admissions Open" class="admissions-button">Admission Open</a>
+    </div>
+</div>
+<footer>
+    <h2>Air University Information</h2>
+    <div class="footer-line"></div>
+
+    <div class="contact-section">
+        <div class="contact-info">
+            <img src="mail.png" alt="Email Icon"> Airuniversity@gmail.com
+        </div>
+        <div class="contact-info">
+            <img src="call.png" alt="Phone Icon"> +123 456 7890
+        </div>
+        <div class="contact-info">
+            <img src="location.png" alt="Location Icon"> Main Campus PAF Complex E-9, Islamabad
+        </div>
+    </div>
+</footer>
+</body>
+</html>
